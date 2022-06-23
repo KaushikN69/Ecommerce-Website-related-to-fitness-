@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('imglogin.jpg') no-repeat center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+
+h1, h2, h3, h4{
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: .5px;
+}
+
+.logo{
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    height:fit-content;
+    width:max-content;
+}
+
+.blaze{
+    float: left;
+    font-size: 38px;
+    font-weight: 500px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.fit{
+     color: #f5634b;
+     text-transform: capitalize;
+}
+
+.recover_frm{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+.form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.form img{
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    
+}
+.form h2{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: #ff652f;
+}
+
+.form .input_txt{
+    position: relative;
+    margin: 1px 0px 1px;
+}
+
+.form .input_txt input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+
+}
+
+
+
+.form .input_txt label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+}
+
+.form .input_txt input:focus + label,
+.form .input_txt input:valid + label{
+    transform: translatey(-18px);
+    color:#ff652f;
+    font-size: .8rem;
+}
+
+.pass{
+    position: absolute;
+    padding: 10px 0;
+    bottom: 0;
+    font-size: 0.7rem;
+}
+
+.submit-bt{
+    display:block;
+    width: 100%;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    background: #ff652f;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-bt:hover{
+    opacity: 0.8;
+}
+
+.member{
+    padding: 15px 1px;
+}
+
+.member a{
+    color: #ff652f;
+}
+
+.member a:hover{
+    opacity: 0.7;
+}
+
+.img img{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 150px;
+    height: auto;
+}
+
+.img img:hover{
+    opacity: 0.7;
+}
+
+
+
+
